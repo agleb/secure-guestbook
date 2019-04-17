@@ -98,6 +98,6 @@ WEBAPP_STORAGE_MYSQL_DB
 
 ### Notes
 
-1. Error reporting is disabled in /src/public/index.php
+1. Full protection (covert mode) is disabled in Configuration.php in getDisableProtection(). Set it to false for full security
 2. See /src/classes/Configuration.php to learn about current config
 3. Fail2Ban config is relatively paranoid, adjust `getErrorsTillBan` and `getRequestsTillBan` if necessary
