@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Secure Guestbook</title>
+</head>
+
+<body>
+    <h1><a href="/">Secure Guestbook</a> - Create message</h1>
+    <h5>{{authenticated_user}} {{auth_block}}</h5>
+    <table width="100%">
+        <tr>
+            <td>
+                <form name="main" method="post" action="{{create_msg_form_action}}">
+                Enter your message<br><br>
+                <textarea name="message" rows="10" cols="80"></textarea><br><br>
+                <input type="hidden" name="action" value="create_msg_receiver">
+                <input type="hidden" name="csrf_token" value="{{csrf_token}}">
+            <input type="submit" value="create">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

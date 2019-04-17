@@ -1,0 +1,8 @@
+/.vscode/
+/.vscode/launch.json
+vendor/
+phpcbf.phar
+phpcs.phar
+composer.lock
+phpunit.phar
+.phpunit.result.cache
